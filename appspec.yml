@@ -6,12 +6,12 @@ files:
   - source: routes/index.js
     destination: /var/www/
 hooks:
-#  BeforeInstall:
-#    - location: deploy_hooks/before_install.sh
-#      runas: root
+  BeforeInstall:
+    - location: echo "EPA" > /tmp/test.txt
+      runas: root
   ApplicationStart:
-    - location: npm start
-      runas: ec2-user
+    - location: bin/www
+      runas: root
 #  ValidateService:
 #    - location: deploy_hooks/verify_service.sh
 #      runas: root
