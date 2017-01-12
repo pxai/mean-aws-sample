@@ -1,15 +1,16 @@
+# First we chose node, and its boron version
 FROM node:boron
 
 # Create app directory
-RUN mkdir -p /usr/src/app
-WORKDIR /usr/src/app
+RUN mkdir -p /srv/www/src/app
+WORKDIR /srv/www/src/app
 
 # Install app dependencies
-COPY package.json /usr/src/app/
+COPY package.json /srv/www/src/app/
 RUN npm install
 
 # Bundle app source
-COPY . /usr/src/app
+COPY . /srv/www/src/app
 
 EXPOSE 3001
 CMD [ "npm", "start" ]
