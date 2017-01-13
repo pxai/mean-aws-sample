@@ -23,15 +23,27 @@ Get container output:
 ```
 $ docker logs <container id>
 ```
+Enter the shell of a container
+```
+$ docker exec -it <container id> /bin/bash
+```
 See images with
 ```
 $ docker images
 ```
-Stop it with
+Stop it with the container id
 ```
 $ docker stop <container id>
 ```
-
+Remove the image, with the image id
+```
+$ docker rmi <image id>
+```
+# Can't access from host machine?
+Check what is the docker-machine ip, when docker is not running natively:
+```
+$ docker-machine ip default
+```
 # Running:
 ```
 node -e "NODE_ENV=production" app.js
