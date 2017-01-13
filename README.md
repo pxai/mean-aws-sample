@@ -6,9 +6,10 @@ Simple Node.js sample app for AWS
 * Add .Dockerfile
 
 Use this commands:
-To build the image, inside the directory where Dockerfile resides type:
+To build the image, inside the directory where Dockerfile resides type.
+Notice the trailing dot:
 ```
-$ docker build -t pello/mean-aws-sample
+$ docker build -t pello/mean-aws-sample .
 ```
 To run the container
 ```
@@ -21,6 +22,14 @@ $ docker ps
 Get container output:
 ```
 $ docker logs <container id>
+```
+See images with
+```
+$ docker images
+```
+Stop it with
+```
+$ docker stop <container id>
 ```
 
 # Running:
