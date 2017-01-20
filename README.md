@@ -1,6 +1,7 @@
 
 # Simple Node+Express for AWS
-Simple Node.js sample app for AWS
+Simple Node.js sample app for AWS.
+Just for learning purposes.
 # Docker building
 * Add Dockerfile
 * Add .Dockerfile
