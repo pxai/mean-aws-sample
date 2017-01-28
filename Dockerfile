@@ -1,4 +1,5 @@
 # First we chose node, and its boron version
+# Linked github with dockerhub
 FROM node:boron
 
 # Create app directory

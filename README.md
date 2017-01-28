@@ -6,12 +6,14 @@ Just for learning purposes.
 * Add Dockerfile
 * Add .Dockerfile
 
-Now integrated with Dockerhub
+# Now integrated with Dockerhub
+GitHub pello/node-express
 
+# Commands
 Use this commands:
 To build the image, inside the directory where Dockerfile resides type.
 Notice the trailing dot:
-```
+``
 $ docker build -t pello/mean-aws-sample .
 ```
 To run the container
