@@ -6,6 +6,8 @@ Just for learning purposes.
 * Add Dockerfile
 * Add .Dockerfile
 
+Now integrated with Dockerhub
+
 Use this commands:
 To build the image, inside the directory where Dockerfile resides type.
 Notice the trailing dot:
